@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --panel: #f7f7f5;
+  --text: #191919;
+  --muted: #787774;
+  --border: #e9e9e7;
+  --ring: #a6a6a0;
+  --note-c: #f5d6d3;
+  --note-d: #f6ddc2;
+  --note-e: #f7edc2;
+  --note-f: #dcebd6;
+  --note-g: #d7e5f5;
+  --note-a: #e4dbf3;
+  --note-b: #f2d8e7;
+  --note-gold: #f3df9f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--background);
+  color: var(--text);
+  font-family: Pretendard, Inter, system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--background);
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+::selection {
+  background: var(--note-g);
+}
+
+.notion-page {
+  color: var(--text);
+}
+
+.notion-block {
+  border: 1px solid var(--border);
+  background: var(--panel);
+  border-radius: 1rem;
+}
